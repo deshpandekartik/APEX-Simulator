@@ -16,7 +16,7 @@ MUL2, each with a one cycle latency.
 ## Registers and Memory
 
 **Registers** Use of 16 architectural registers, R0 through R15. 
-** Memory ** Memory for data is viewed as a linear array of integer values (4 Bytes wide). Data
+**Memory** Memory for data is viewed as a linear array of integer values (4 Bytes wide). Data
 memory ranges from 0 through 3999 and memory addresses correspond to a Byte address that begins the
 first Byte of the 4-Byte group that makes up a 4 Byte data item. 
 
@@ -42,22 +42,22 @@ follows the one when forwarding took place.
 
 ## Classes
 
-- ** Code memory **
+- **Code memory**
 Class used as and array of objects, each object is stored as a instruction. 
 	
-- ** Register **
+- **Register**
 Class used as array of objects rangining from 0 – 15  ( each corresponding to R0, R1, R2, R3.... R15). Each register will have a value field and a status field.  Status used to check if corresponding register is valid or invalid for interlocking to work
 
-- ** Data memory **
+- **Data memory**
 Class used as an array of object each object corresponding to a data memory location.
 
 
 ## Structures
 
-- ** Display class **
+- **Display class**
 This structure will store all data to be displayed in it while simulate() is running.
 
-- ** Forwarding bus **
+- **Forwarding bus**
 This structure will store data forwarded from execute stage to decode stage. The stored data is then read in decode stage. The struct has 3 fields register number, value and status
  
 
