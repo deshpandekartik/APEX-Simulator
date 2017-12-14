@@ -16,6 +16,7 @@ MUL2, each with a one cycle latency.
 ## Registers and Memory
 
 **Registers** Use of 16 architectural registers, R0 through R15. 
+
 **Memory** Memory for data is viewed as a linear array of integer values (4 Bytes wide). Data
 memory ranges from 0 through 3999 and memory addresses correspond to a Byte address that begins the
 first Byte of the 4-Byte group that makes up a 4 Byte data item. 
